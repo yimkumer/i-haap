@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".doctorpage">
+
+    <TextView
+        android:id="@+id/doc"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="28dp"
+        android:text="Doctor Page"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintEnd_toStartOf="@+id/dlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dlogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:src="@drawable/out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/p"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/prognosis"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doc"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="All Submitted Patient Questionnaires "
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="19sp"
+        android:textStyle="italic"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doc" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/oval_btn"
+        android:text="View patient Questionnaires"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:backgroundTint="@color/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/q"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/geef"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Assess your Prognosis by contacting patient"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="19sp"
+        android:textStyle="italic"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/oval_btn"
+        android:text="View Patient Contact Details"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:backgroundTint="@color/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/o"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/thumb"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Thank you for your services! "
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="19sp"
+        android:textStyle="italic"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="180dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/oval_btn"
+        android:text="Logout Doctor"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:backgroundTint="@color/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/o"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

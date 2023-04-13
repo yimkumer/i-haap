@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#0D324D"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="P a t i e n t     D e t a i l s"
+        android:fontFamily="serif"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Name"
+        android:editable="false"
+        android:textIsSelectable="true"
+        android:textColor="#FFFF"
+        android:textColorHint="#FFFF"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gmail"
+        android:textColorHint="#FFFF"
+        android:textColor="#FFFF"
+        android:id="@+id/ugmail"
+        android:editable="false"
+        android:textIsSelectable="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:editable="false"
+        android:textIsSelectable="true"
+        android:textColorHint="#FFFF"
+        android:textColor="#FFFF"
+        android:id="@+id/uphone"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medical insurance"
+        android:editable="false"
+        android:textIsSelectable="true"
+        android:id="@+id/umedical"
+        android:textColorHint="#FFFF"
+        android:textColor="#FFFF"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp" />
+
+</LinearLayout>

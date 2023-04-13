@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="50dp"
+    app:cardCornerRadius="13dp"
+    android:layout_margin="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="706dp"
+        android:background="#0D324D"
+        android:padding="15dp">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="155dp"
+            android:layout_height="164dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/patient">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="155dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/img"
+            android:src="@drawable/c">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Patient name   :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGender"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/name"
+            android:fontFamily="serif"
+            android:paddingTop="14dp"
+            android:text=" blank "
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Gender   :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_toRightOf="@id/gender"
+            android:fontFamily="serif"
+            android:paddingTop="12dp"
+            android:text=" blank "
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="3dp"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Patient age (yrs)   :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+
+        <TextView
+            android:id="@+id/tvPatient_age_yrs"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/age"
+            android:fontFamily="serif"
+            android:paddingTop="14dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:id="@+id/height"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Patient height (ft)   :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvPatient_height_ft"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPatient_age_yrs"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/height"
+            android:fontFamily="serif"
+            android:paddingTop="14dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/height"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Patient weight (kg)  :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvPatient_weight_kg"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPatient_height_ft"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/weight"
+            android:fontFamily="serif"
+            android:paddingTop="14dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/symptom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weight"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="List of Symptom (s)  : -"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvsymptom1"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/symptom"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvsymptom2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/symptom"
+            android:layout_toRightOf="@+id/tvsymptom1"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tvsymptom3"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsymptom1"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvsymptom4"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsymptom2"
+            android:layout_toRightOf="@+id/tvsymptom3"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tvsymptom5"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsymptom4"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvsymptom6"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsymptom4"
+            android:layout_toRightOf="@+id/tvsymptom5"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvsymptom7"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsymptom5"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvsymptom8"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsymptom6"
+            android:layout_toRightOf="@+id/tvsymptom7"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvsymptom9"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsymptom8"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvsymptom10"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsymptom8"
+            android:layout_toRightOf="@+id/tvsymptom9"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvsymptom9"
+            android:layout_marginTop="4dp"
+            android:fontFamily="serif"
+            android:paddingTop="20dp"
+            android:text="Additional Symptom details  :-"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvadditional"
+            android:layout_width="340dp"
+            android:layout_height="116dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:fontFamily="serif"
+            android:text=" k"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

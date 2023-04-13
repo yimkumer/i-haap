@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="30dp"
+    app:cardCornerRadius="13dp"
+    android:layout_margin="16dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="706dp"
+        android:background="#0D324D"
+        android:padding="15dp">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="155dp"
+            android:layout_height="164dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/patient"></ImageView>
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img"
+            android:src="@drawable/docg">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/gmail"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pname"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Patient Gmail   :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+
+        <TextView
+            android:id="@+id/tvgmail"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/gmail"
+            android:fontFamily="serif"
+            android:paddingTop="14dp"
+            android:text=" blank "
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Patient name   :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/pname"
+            android:fontFamily="serif"
+            android:paddingTop="12dp"
+            android:text=" blank "
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gmail"
+            android:layout_marginTop="3dp"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Patient number  :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+
+        <TextView
+            android:id="@+id/tvphone"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvgmail"
+            android:layout_toRightOf="@id/phone"
+            android:fontFamily="serif"
+            android:paddingTop="16dp"
+            android:text=" blank "
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:id="@+id/address"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Address   :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvaddress"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvphone"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/address"
+            android:fontFamily="serif"
+            android:paddingTop="14dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:id="@+id/state"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="State   :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvstate"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvaddress"
+            android:layout_toRightOf="@+id/state"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/state"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="City   :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvcity"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvstate"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/city"
+            android:fontFamily="serif"
+            android:paddingTop="14dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Pin code   :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvpin"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvcity"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/pin"
+            android:fontFamily="serif"
+            android:paddingTop="14dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/aadhar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pin"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Aadhar card   :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvaadhar"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvpin"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/aadhar"
+            android:fontFamily="serif"
+            android:paddingTop="14dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pan"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Pan card    :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvpan"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/pan"
+            android:fontFamily="serif"
+            android:paddingTop="14dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aadhar"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="OR"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/medical"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pan"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="Medical insurance  :"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tvmedical"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvpan"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/medical"
+            android:fontFamily="serif"
+            android:paddingTop="14dp"
+            android:text="blank"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/medical"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/note" />
+
+        <TextView
+            android:id="@+id/press"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvmedical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_toRightOf="@id/view"
+            android:fontFamily="serif"
+            android:paddingTop="15dp"
+            android:text="Press icon to copy Patient Contact details"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
